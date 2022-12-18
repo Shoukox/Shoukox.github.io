@@ -1,0 +1,162 @@
+.input {
+    display: flex;
+    width: 95%;
+    position: relative;
+    align-items: center;
+}
+
+
+.input__box {
+    width: 100%;
+    transition: 0.2s;
+    border-radius: 50px;
+    box-shadow: inset 0px 0px 5px black;
+    padding: 20px 100px 20px 30px;
+
+    font-size: 25px;
+    
+    border: none
+}
+.input__box:focus {
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.4);
+    outline: none;
+}
+
+.input_submit {
+    border: none;
+    border-radius: 50px;
+
+    position: absolute;
+    right: 0px;
+    margin: 12px;
+
+    width: 50px;
+    height: 50px;
+    background-color: rgb(100, 149, 237);
+    color: white;
+
+    box-shadow: 0px 0px 10px black;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+.input_submit:hover {
+    background-color: rgb(116, 157, 232);
+}
+
+.input_submit:active {
+    transform: scale(0.8);
+    box-shadow: 0 0 5px black;
+}
+
+.input_submit:disabled {
+    transform: scale(0.1);
+}
+
+.container-taskify{
+    justify-content: space-between;
+}
+
+.todos {
+    display: flex;
+    flex-direction: column;
+
+    width: 45%;
+    padding: 15px;
+    margin: 0 10px;
+    border-radius: 15px;
+    background-color: aquamarine;
+
+    transition: 0.2s;
+}
+.todos-done{
+    background-color:chartreuse;
+    color: red;
+}
+.todos_heading{
+    font-size: 30px;
+    color: white;
+}
+.todos__single {
+    display: flex;
+    flex-wrap: wrap;
+
+
+    border-radius: 5px;
+    background: url("https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-05.jpg");
+    box-shadow: 0 0 8px rebeccapurple;
+
+    padding: 20px;
+    margin-top: 15px;
+
+    transition: 0.2s;
+}
+.todos__single:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px blueviolet;
+}
+.todos__single_text{
+    width: 100%;
+    font-size: 20px;
+    flex-wrap: wrap;
+    border:none;
+    padding: 5px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.todos__single_text:focus{
+    outline:none;
+}
+.todos__single_icons{
+    right: 0px;
+
+}
+.todos__single_icons_icon{
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.dragOnActive{
+    background-color: rgb(190, 255, 233);
+}
+.dragOnDone{
+    background-color: rgb(181, 255, 107);
+}
+.dragging{
+    box-shadow: 0 0 20px red;
+}
+@media (max-width: 1100px){
+    .todos{
+        width: 45%;
+    }
+}
+@media (max-width: 700px) {
+    .input{
+        width: 90%
+    }
+    .todos{
+        width: 80%
+    }
+}
+@media (max-width: 500px){
+    .container{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .todos{
+        margin: 10px 0;
+    }
+}
+@media (max-width: 300px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .todos__single{
+        flex-direction: column;
+    }
+}

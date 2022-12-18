@@ -1,0 +1,52 @@
+.container-login{
+
+}
+.login{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    border-radius: 10px;
+    flex-grow: 0.5;
+    padding: 30px;
+    background: url("https://png.pngtree.com/thumb_back/fh260/background/20210814/pngtree-blue-purple-simple-gradient-background-image_760572.jpg");
+    background-size: cover ;
+}
+.login_inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.login_input{
+    display: flex;
+    align-items: center;
+}
+.login_input__box{
+    border: none;
+    border-radius: 5px;
+    padding: 20px 40px;
+    margin: 10px 0px;
+
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
+}
+.login_input__box:focus{
+    outline: none;
+}
+.login_input__icon{
+    position: absolute;
+    left: 45px;
+}
+.login_input__submit_button{
+    border: none;
+    width: 100%;
+    height: 10%;
+    background-color: aquamarine;
+    box-shadow: 0 0 10px azure;
+}
+.login_input__submit_button:hover{
+    cursor:pointer;
+}
